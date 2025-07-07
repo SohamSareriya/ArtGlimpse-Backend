@@ -82,7 +82,7 @@
 //     public CorsConfigurationSource corsConfigurationSource() {
 //         CorsConfiguration configuration = new CorsConfiguration();
 //         // Allow your client origins
-//         configuration.setAllowedOrigins(Arrays.asList("http://localhost:5174", "http://localhost:5173"));
+//         configuration.setAllowedOrigins(Arrays.asList("https://artglimpse-seller.vercel.app", "https://artglimpse.vercel.app"));
 //         // Allow necessary HTTP methods
 //         configuration.setAllowedMethods(Arrays.asList("GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"));
 //         // Allow all headers (or specify only the ones you need)
@@ -237,7 +237,7 @@ public class UnifiedSecurityConfig {
     @Bean
     public CorsConfigurationSource corsConfigurationSource() {
         CorsConfiguration configuration = new CorsConfiguration();
-        configuration.setAllowedOrigins(Arrays.asList("http://localhost:5174", "http://localhost:5173"));
+        configuration.setAllowedOrigins(Arrays.asList("https://artglimpse-seller.vercel.app", "https://artglimpse.vercel.app"));
         configuration.setAllowedMethods(Arrays.asList("GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"));
         configuration.setAllowedHeaders(Arrays.asList("*"));
         configuration.setAllowCredentials(true);
